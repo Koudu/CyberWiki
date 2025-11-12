@@ -299,7 +299,7 @@ function SampleMainPage(item) {
 }
 
 // Данные
-const item: [
+const items = [
     {
       id: 1,
       text: "Введение",
