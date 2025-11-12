@@ -5,6 +5,10 @@ body {
     font-family: Arial, sans-serif;
 }
 
+:focus {
+  outline: none;
+}
+
 .mainPage {
     display: flex;
     flex-direction: column;
@@ -20,19 +24,15 @@ body {
     color: #FFFFFF;
     box-sizing: border-box;
     cursor: pointer;
-}
-
-.block:hover {
-    background-color: #7a9aab;
+    display: flex;
 }
 
 .numBlock {
-    margin: 0 0 10px 0;
-    font-size: 24px;
-    font-weight: bold;
+    margin: 2px 20px 3px 0;
+    font-size: 35px;
 }
 
 .textBlock {
-    margin: 0;
+    margin-top: auto;
     font-size: 16px;
 }
