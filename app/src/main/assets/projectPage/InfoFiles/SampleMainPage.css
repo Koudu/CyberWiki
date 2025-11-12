@@ -1,0 +1,10 @@
+.block {
+    height: auto;
+    width: max-size;
+    background-color: #69818D;
+    border-radius: 14px;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 20px 20px 20px 20px;
+    color: #FFFFFF;
+}
