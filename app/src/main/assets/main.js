@@ -1,298 +1,27 @@
-//import "./style.css";
-//import SampleMainPage from "./projectPage/InfoFiles/SampleMainPage"
-//
-//window.loadPage = function(page) {
-//    console.log("Загрузка: " + page);
-//    window.location.href = "file:///android_asset/" + page;
-//};
-//
-//const mainPage = document.getElementById("main-page")
-//const item = [
-//    {
-//        id: 0,
-//        num: 0,
-//        text: "Введение",
-//    },
-//    {
-//        id: 1,
-//        num: 1,
-//        text: "База",
-//    },
-//    {
-//        id: 2,
-//        num: 2,
-//        text: "Как работает компьютер на уровне железа",
-//    },
-//    {
-//        id: 3,
-//        num: 3,
-//        text: "Сети",
-//    },
-//    {
-//        id: 4,
-//        num: 4,
-//        text: "Веб-хакинг",
-//    },
-//    {
-//        id: 5,
-//        num: 5,
-//        text: "Криптография",
-//    },
-//    {
-//        id: 6,
-//        num: 6,
-//        text: "Активный каталог",
-//    },
-//    {
-//        id: 7,
-//        num: 7,
-//        text: "Эксплойты и бинарные уязвимости",
-//    },
-//    {
-//        id: 8,
-//        num: 8,
-//        text: "Реверс-инжиниринг",
-//    },
-//    {
-//        id: 9,
-//        num: 9,
-//        text: "Малварь и пост-эксплуатация",
-//    },
-//    {
-//        id: 10,
-//        num: 10,
-//        text: "Облака, контейнеры, DevSecOps",
-//    },
-//    {
-//        id: 11,
-//        num: 11,
-//        text: "Мобильный хакинг",
-//    },
-//];
-//
-//const AllBlock = item.map((i) => SampleMainPage(i));
-//
-//function renderProducts(block) {
-//  if (mainPage) {
-//    mainPage.innerHTML = block.map((c) => c.render()).join("");
-//  }
-//}
-//
-//renderProducts(AllBlock);
-
-
-
-
-
-//// Функция для создания блока
-//function SampleMainPage(item) {
-//    return {
-//        render: () => {
-//            return `
-//                <div class="block" id="block-${item.id}">
-//                    <h3 class="numBlock">${item.num}</h3>
-//                    <p class="textBlock">${item.text}</p>
-//                </div>
-//            `;
-//        },
-//    };
-//}
-//
-//// Данные
-//const items1 = [
-//    { id: 0.1, num: 0.1, text: "БАЗА" },
-//    { id: 2, num: 2, text: "КАК РАБОТАЕТ КОМПЬЮТЕР НА УРОВНЕ ЖЕЛЕЗА" },
-//    { id: 3, num: 3, text: "СЕТИ" },
-//    { id: 4, num: 4, text: "ВЕБ-ХАКИНГ" },
-//    { id: 5, num: 5, text: "КРИПТОГРАФИЯ" },
-//    { id: 6, num: 6, text: "АКТИВНЫЙ КАТАЛОГ" },
-//    { id: 7, num: 7, text: "ЭКСПЛОЙТЫ И БИНАРНЫЕ УЯЗВИМОСТИ" },
-//    { id: 8, num: 8, text: "РЕВЕРС-ИНЖИНИРИНГ" },
-//    { id: 9, num: 9, text: "МАЛВАРЬ И ПОСТ-ЭКСПЛУАТАЦИЯ" },
-//    { id: 10, num: 10, text: "ОБЛАКА, КОНТЕЙНЕР, DEVSECOPS" },
-//    { id: 11, num: 11, text: "МОБИЛЬНЫЙ ХАКИНГ" },
-//];
-//
-//const items2 = [
-//    { id: 0.1, num: 0.1, text: "БАЗА" },
-//    { id: 2, num: 2, text: "КАК РАБОТАЕТ КОМПЬЮТЕР НА УРОВНЕ ЖЕЛЕЗА" },
-//    { id: 3, num: 3, text: "СЕТИ" },
-//    { id: 4, num: 4, text: "ВЕБ-ХАКИНГ" },
-//    { id: 5, num: 5, text: "КРИПТОГРАФИЯ" },
-//    { id: 6, num: 6, text: "АКТИВНЫЙ КАТАЛОГ" },
-//    { id: 7, num: 7, text: "ЭКСПЛОЙТЫ И БИНАРНЫЕ УЯЗВИМОСТИ" },
-//    { id: 8, num: 8, text: "РЕВЕРС-ИНЖИНИРИНГ" },
-//    { id: 9, num: 9, text: "МАЛВАРЬ И ПОСТ-ЭКСПЛУАТАЦИЯ" },
-//    { id: 10, num: 10, text: "ОБЛАКА, КОНТЕЙНЕР, DEVSECOPS" },
-//    { id: 11, num: 11, text: "МОБИЛЬНЫЙ ХАКИНГ" },
-//];
-//
-//const items3 = [
-//    { id: 0.1, num: 0.1, text: "БАЗА" },
-//    { id: 2, num: 2, text: "КАК РАБОТАЕТ КОМПЬЮТЕР НА УРОВНЕ ЖЕЛЕЗА" },
-//    { id: 3, num: 3, text: "СЕТИ" },
-//    { id: 4, num: 4, text: "ВЕБ-ХАКИНГ" },
-//    { id: 5, num: 5, text: "КРИПТОГРАФИЯ" },
-//    { id: 6, num: 6, text: "АКТИВНЫЙ КАТАЛОГ" },
-//    { id: 7, num: 7, text: "ЭКСПЛОЙТЫ И БИНАРНЫЕ УЯЗВИМОСТИ" },
-//    { id: 8, num: 8, text: "РЕВЕРС-ИНЖИНИРИНГ" },
-//    { id: 9, num: 9, text: "МАЛВАРЬ И ПОСТ-ЭКСПЛУАТАЦИЯ" },
-//    { id: 10, num: 10, text: "ОБЛАКА, КОНТЕЙНЕР, DEVSECOPS" },
-//    { id: 11, num: 11, text: "МОБИЛЬНЫЙ ХАКИНГ" },
-//];
-//
-//const items4 = [
-//    { id: 0.1, num: 0.1, text: "БАЗА" },
-//    { id: 2, num: 2, text: "КАК РАБОТАЕТ КОМПЬЮТЕР НА УРОВНЕ ЖЕЛЕЗА" },
-//    { id: 3, num: 3, text: "СЕТИ" },
-//    { id: 4, num: 4, text: "ВЕБ-ХАКИНГ" },
-//    { id: 5, num: 5, text: "КРИПТОГРАФИЯ" },
-//    { id: 6, num: 6, text: "АКТИВНЫЙ КАТАЛОГ" },
-//    { id: 7, num: 7, text: "ЭКСПЛОЙТЫ И БИНАРНЫЕ УЯЗВИМОСТИ" },
-//    { id: 8, num: 8, text: "РЕВЕРС-ИНЖИНИРИНГ" },
-//    { id: 9, num: 9, text: "МАЛВАРЬ И ПОСТ-ЭКСПЛУАТАЦИЯ" },
-//    { id: 10, num: 10, text: "ОБЛАКА, КОНТЕЙНЕР, DEVSECOPS" },
-//    { id: 11, num: 11, text: "МОБИЛЬНЫЙ ХАКИНГ" },
-//];
-//
-//const items5 = [
-//    { id: 0.1, num: 0.1, text: "БАЗА" },
-//    { id: 2, num: 2, text: "КАК РАБОТАЕТ КОМПЬЮТЕР НА УРОВНЕ ЖЕЛЕЗА" },
-//    { id: 3, num: 3, text: "СЕТИ" },
-//    { id: 4, num: 4, text: "ВЕБ-ХАКИНГ" },
-//    { id: 5, num: 5, text: "КРИПТОГРАФИЯ" },
-//    { id: 6, num: 6, text: "АКТИВНЫЙ КАТАЛОГ" },
-//    { id: 7, num: 7, text: "ЭКСПЛОЙТЫ И БИНАРНЫЕ УЯЗВИМОСТИ" },
-//    { id: 8, num: 8, text: "РЕВЕРС-ИНЖИНИРИНГ" },
-//    { id: 9, num: 9, text: "МАЛВАРЬ И ПОСТ-ЭКСПЛУАТАЦИЯ" },
-//    { id: 10, num: 10, text: "ОБЛАКА, КОНТЕЙНЕР, DEVSECOPS" },
-//    { id: 11, num: 11, text: "МОБИЛЬНЫЙ ХАКИНГ" },
-//];
-//
-//const items6 = [
-//    { id: 0.1, num: 0.1, text: "БАЗА" },
-//    { id: 2, num: 2, text: "КАК РАБОТАЕТ КОМПЬЮТЕР НА УРОВНЕ ЖЕЛЕЗА" },
-//    { id: 3, num: 3, text: "СЕТИ" },
-//    { id: 4, num: 4, text: "ВЕБ-ХАКИНГ" },
-//    { id: 5, num: 5, text: "КРИПТОГРАФИЯ" },
-//    { id: 6, num: 6, text: "АКТИВНЫЙ КАТАЛОГ" },
-//    { id: 7, num: 7, text: "ЭКСПЛОЙТЫ И БИНАРНЫЕ УЯЗВИМОСТИ" },
-//    { id: 8, num: 8, text: "РЕВЕРС-ИНЖИНИРИНГ" },
-//    { id: 9, num: 9, text: "МАЛВАРЬ И ПОСТ-ЭКСПЛУАТАЦИЯ" },
-//    { id: 10, num: 10, text: "ОБЛАКА, КОНТЕЙНЕР, DEVSECOPS" },
-//    { id: 11, num: 11, text: "МОБИЛЬНЫЙ ХАКИНГ" },
-//];
-//
-//const items7 = [
-//    { id: 0.1, num: 0.1, text: "БАЗА" },
-//    { id: 2, num: 2, text: "КАК РАБОТАЕТ КОМПЬЮТЕР НА УРОВНЕ ЖЕЛЕЗА" },
-//    { id: 3, num: 3, text: "СЕТИ" },
-//    { id: 4, num: 4, text: "ВЕБ-ХАКИНГ" },
-//    { id: 5, num: 5, text: "КРИПТОГРАФИЯ" },
-//    { id: 6, num: 6, text: "АКТИВНЫЙ КАТАЛОГ" },
-//    { id: 7, num: 7, text: "ЭКСПЛОЙТЫ И БИНАРНЫЕ УЯЗВИМОСТИ" },
-//    { id: 8, num: 8, text: "РЕВЕРС-ИНЖИНИРИНГ" },
-//    { id: 9, num: 9, text: "МАЛВАРЬ И ПОСТ-ЭКСПЛУАТАЦИЯ" },
-//    { id: 10, num: 10, text: "ОБЛАКА, КОНТЕЙНЕР, DEVSECOPS" },
-//    { id: 11, num: 11, text: "МОБИЛЬНЫЙ ХАКИНГ" },
-//];
-//
-//const items8 = [
-//    { id: 0.1, num: 0.1, text: "БАЗА" },
-//    { id: 2, num: 2, text: "КАК РАБОТАЕТ КОМПЬЮТЕР НА УРОВНЕ ЖЕЛЕЗА" },
-//    { id: 3, num: 3, text: "СЕТИ" },
-//    { id: 4, num: 4, text: "ВЕБ-ХАКИНГ" },
-//    { id: 5, num: 5, text: "КРИПТОГРАФИЯ" },
-//    { id: 6, num: 6, text: "АКТИВНЫЙ КАТАЛОГ" },
-//    { id: 7, num: 7, text: "ЭКСПЛОЙТЫ И БИНАРНЫЕ УЯЗВИМОСТИ" },
-//    { id: 8, num: 8, text: "РЕВЕРС-ИНЖИНИРИНГ" },
-//    { id: 9, num: 9, text: "МАЛВАРЬ И ПОСТ-ЭКСПЛУАТАЦИЯ" },
-//    { id: 10, num: 10, text: "ОБЛАКА, КОНТЕЙНЕР, DEVSECOPS" },
-//    { id: 11, num: 11, text: "МОБИЛЬНЫЙ ХАКИНГ" },
-//];
-//
-//const items9 = [
-//    { id: 0.1, num: 0.1, text: "БАЗА" },
-//    { id: 2, num: 2, text: "КАК РАБОТАЕТ КОМПЬЮТЕР НА УРОВНЕ ЖЕЛЕЗА" },
-//    { id: 3, num: 3, text: "СЕТИ" },
-//    { id: 4, num: 4, text: "ВЕБ-ХАКИНГ" },
-//    { id: 5, num: 5, text: "КРИПТОГРАФИЯ" },
-//    { id: 6, num: 6, text: "АКТИВНЫЙ КАТАЛОГ" },
-//    { id: 7, num: 7, text: "ЭКСПЛОЙТЫ И БИНАРНЫЕ УЯЗВИМОСТИ" },
-//    { id: 8, num: 8, text: "РЕВЕРС-ИНЖИНИРИНГ" },
-//    { id: 9, num: 9, text: "МАЛВАРЬ И ПОСТ-ЭКСПЛУАТАЦИЯ" },
-//    { id: 10, num: 10, text: "ОБЛАКА, КОНТЕЙНЕР, DEVSECOPS" },
-//    { id: 11, num: 11, text: "МОБИЛЬНЫЙ ХАКИНГ" },
-//];
-//
-//const items10 = [
-//    { id: 0.1, num: 0.1, text: "БАЗА" },
-//    { id: 2, num: 2, text: "КАК РАБОТАЕТ КОМПЬЮТЕР НА УРОВНЕ ЖЕЛЕЗА" },
-//    { id: 3, num: 3, text: "СЕТИ" },
-//    { id: 4, num: 4, text: "ВЕБ-ХАКИНГ" },
-//    { id: 5, num: 5, text: "КРИПТОГРАФИЯ" },
-//    { id: 6, num: 6, text: "АКТИВНЫЙ КАТАЛОГ" },
-//    { id: 7, num: 7, text: "ЭКСПЛОЙТЫ И БИНАРНЫЕ УЯЗВИМОСТИ" },
-//    { id: 8, num: 8, text: "РЕВЕРС-ИНЖИНИРИНГ" },
-//    { id: 9, num: 9, text: "МАЛВАРЬ И ПОСТ-ЭКСПЛУАТАЦИЯ" },
-//    { id: 10, num: 10, text: "ОБЛАКА, КОНТЕЙНЕР, DEVSECOPS" },
-//    { id: 11, num: 11, text: "МОБИЛЬНЫЙ ХАКИНГ" },
-//];
-//
-//const items11 = [
-//    { id: 0.1, num: 0.1, text: "БАЗА" },
-//    { id: 2, num: 2, text: "КАК РАБОТАЕТ КОМПЬЮТЕР НА УРОВНЕ ЖЕЛЕЗА" },
-//    { id: 3, num: 3, text: "СЕТИ" },
-//    { id: 4, num: 4, text: "ВЕБ-ХАКИНГ" },
-//    { id: 5, num: 5, text: "КРИПТОГРАФИЯ" },
-//    { id: 6, num: 6, text: "АКТИВНЫЙ КАТАЛОГ" },
-//    { id: 7, num: 7, text: "ЭКСПЛОЙТЫ И БИНАРНЫЕ УЯЗВИМОСТИ" },
-//    { id: 8, num: 8, text: "РЕВЕРС-ИНЖИНИРИНГ" },
-//    { id: 9, num: 9, text: "МАЛВАРЬ И ПОСТ-ЭКСПЛУАТАЦИЯ" },
-//    { id: 10, num: 10, text: "ОБЛАКА, КОНТЕЙНЕР, DEVSECOPS" },
-//    { id: 11, num: 11, text: "МОБИЛЬНЫЙ ХАКИНГ" },
-//];
-//
-//// Рендеринг
-//function renderPage() {
-//    const mainPage = document.getElementById("main-page");
-//
-//    if (!mainPage) {
-//        return;
-//    }
-//
-//    const blocks = items.map(item => SampleMainPage(item));
-//    const html = blocks.map(block => block.render()).join("");
-//
-//    mainPage.innerHTML = html;
-//}
-//
-//// Вызываем при загрузке
-//document.addEventListener('DOMContentLoaded', renderPage);
-//
-//// На случай если DOMContentLoaded уже сработал
-//if (document.readyState === 'loading') {
-//    document.addEventListener('DOMContentLoaded', renderPage);
-//} else {
-//    renderPage();
-//}
-
-
-
-
-
-
-
-
 // Функция для создания блока
 function SampleMainPage(item) {
     return {
         render: () => {
-            return `
-                <a class="block" id="${item.id}">
-                    <h3 class="numBlock">${item.id}</h3>
-                    <p class="textBlock">${item.text}</p>
+            const lessonsHTML = item.lessons.map(lesson => `
+                <a class="block miniBlock" id="${lesson.id}" href="javascript:void(0)" onclick="openLesson('${lesson.id}')">
+                    <h3 class="numMiniBlock">${lesson.id}</h3>
+                    <p class="textMiniBlock">${lesson.title}</p>
                 </a>
+            `).join('');
+
+            return `
+                <div class="section">
+                    <a class="block toggle-block" id="b-${item.id}" href="javascript:void(0)">
+                        <div class="block-content">
+                            <h3 class="numBlock">${item.id}</h3>
+                            <p class="textBlock">${item.text}</p>
+                        </div>
+                        <img class="arrow" src="./projectPage/img/arrowDown.png"> </img>
+                    </a>
+                    <div class="lessons-container" id="lessons-${item.id}">
+                        ${lessonsHTML}
+                    </div>
+                </div>
             `;
         },
     };
@@ -422,91 +151,43 @@ const items = [
 // Рендеринг
 function renderPage() {
     const mainPage = document.getElementById("main-page");
-
-    if (!mainPage) {
-        return;
-    }
+    if (!mainPage) return;
 
     const blocks = items.map(item => SampleMainPage(item));
     const html = blocks.map(block => block.render()).join("");
-
     mainPage.innerHTML = html;
 }
 
-// Вызываем при загрузке
+// Запуск
 document.addEventListener('DOMContentLoaded', renderPage);
-
-// На случай если DOMContentLoaded уже сработал
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', renderPage);
 } else {
     renderPage();
 }
 
+// После renderPage() добавь:
+document.addEventListener('DOMContentLoaded', function() {
+    renderPage();
 
+    // Делегирование кликов
+    document.addEventListener('click', function(e) {
+        const toggle = e.target.closest('.toggle-block');
+        if (!toggle) return;
 
+        const sectionId = toggle.id.replace('b-', '');
+        const container = document.getElementById(`lessons-${sectionId}`);
+        const arrow = toggle.querySelector('.arrow');
 
+        // Переключение
+        container.classList.toggle('open');
+        arrow.classList.toggle('open');
 
-
-
-
-//async function loadBlocks() {
-//  try {
-//    const res = await fetch('data/blocks.json');
-//    const data = await res.json();
-//    renderBlocks(data.blocks);
-//  } catch (e) {
-//    document.getElementById('app').innerHTML = '<h2>Ошибка загрузки</h2>';
-//  }
-//}
-//
-//function renderBlocks(blocks) {
-//  const app = document.getElementById('app');
-//  app.innerHTML = `
-//    <header>
-//      <h1>CyberWiki</h1>
-//      <p>Полный доступ ко всем урокам</p>
-//    </header>
-//    ${blockss.map(blocks => `
-//      <div class="blocks-card">
-//        <div class="blocks-header" onclick="toggleBlocks(${blocks.id})">
-//          <div class="blocks-number">${blocks.id}</div>
-//          <div class="blocks-title">
-//            <h2>${blocks.title}</h2>
-//          </div>
-//          <div class="arrow">Down Arrow</div>
-//        </div>
-//
-//        <div class="lessons-list" id="lessons-${blocks.id}" style="display: ${blocks.expanded ? 'block' : 'none'}">
-//          ${blocks.lessons.map(lesson => `
-//            <div class="lesson-item" onclick="goToLesson('${lesson.id}')">
-//              <span>${lesson.title}</span>
-//            </div>
-//          `).join('')}
-//        </div>
-//      </div>
-//    `).join('')}
-//    <nav class="bottom-nav">
-//      <button class="active">Уроки</button>
-//      <button>Практика</button>
-//      <button>Студия</button>
-//      <button>Настройки</button>
-//    </nav>
-//  `;
-//}
-//
-//function toggleBlocks(id) {
-//  const list = document.getElementById(`lessons-${id}`);
-//  const arrow = list.parentElement.querySelector('.arrow');
-//  const display = list.style.display === 'none' || !list.style.display ? 'block' : 'none';
-//  list.style.display = display;
-//  arrow.textContent = display === 'block' ? 'Up Arrow' : 'Down Arrow';
-//}
-//
-//function goToLesson(id) {
-//  if (window.Android) {
-//    window.Android.openLesson(id);
-//  } else {
-//    alert(`Открыт урок: ${id}`);
-//  }
-//}
+        // Анимация: если закрыто — max-height = 0, если открыто — подстраиваем
+        if (container.classList.contains('open')) {
+            container.style.maxHeight = container.scrollHeight + "px";
+        } else {
+            container.style.maxHeight = "0";
+        }
+    });
+});
