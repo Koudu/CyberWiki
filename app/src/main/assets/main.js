@@ -166,7 +166,6 @@ if (document.readyState === 'loading') {
     renderPage();
 }
 
-// После renderPage() добавь:
 document.addEventListener('DOMContentLoaded', function() {
     renderPage();
 
