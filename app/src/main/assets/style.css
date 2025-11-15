@@ -1,4 +1,4 @@
-.block {
+* {
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -11,6 +11,7 @@ body {
     padding: 10px;
     background-color: #1a1a1a;
     font-family: Arial, sans-serif;
+    color: #e1e1e1;
 }
 
 .toggle-block {
@@ -18,7 +19,6 @@ body {
     width: 100%;
     border-radius: 14px;
     padding: 20px;
-    color: #FFFFFF;
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
@@ -51,10 +51,8 @@ body {
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
       border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #e1e1e1;
 }
-
-
-
 
 .toggle-block {
     justify-content: space-between;
@@ -93,7 +91,6 @@ body {
 .miniBlock {
     border-radius: 10px;
     padding: 12px;
-    color: #fff;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -110,4 +107,46 @@ body {
 .textMiniBlock {
     font-size: 14px;
     margin-left: 5px;
+}
+
+
+
+
+
+
+.textBody {
+    padding: 0;
+}
+
+.upTitle {
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    padding: 4px;
+    
+    align-items: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* border: 1px solid rgba(255, 255, 255, 0.2); */
+}
+
+.btnBack {
+    margin-left: 10px;
+    background-image: url('../projectPage/img/btnBack.png');
+    height: 16px;
+    width: 16px;
+}
+
+.upText {
+    margin-left: 20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.mainText {
+    padding: 20px;
+    line-height: 1.7;
+    margin-top: 40px;
 }

@@ -3,7 +3,7 @@ function SampleMainPage(item) {
     return {
         render: () => {
             const lessonsHTML = item.lessons.map(lesson => `
-                <a class="block miniBlock" id="${lesson.id}" href="javascript:void(0)" onclick="openLesson('${lesson.id}')">
+                <a class="block miniBlock" id="${lesson.id}" href="javascript:void(0)" onclick="openLesson('${lesson.a}')">
                     <h3 class="numMiniBlock">${lesson.id}</h3>
                     <p class="textMiniBlock">${lesson.title}</p>
                 </a>
@@ -33,7 +33,7 @@ const items = [
       id: 1,
       text: "Введение",
       lessons: [
-        { id: "1.1", title: "Что такое кибербезопасность" },
+        { id: "1.1", a: "./MarkdownHtml/lesson1.1.html", title: "Что такое кибербезопасность" },
         { id: "1.2", title: "Кто такие хакеры: белые, чёрные, серые" },
         { id: "1.3", title: "Основы: CIA и Zero Trust" },
         { id: "1.4", title: "Как оценивать уязвимости и атаки" }
@@ -190,3 +190,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// Функция открытия урока
+function openLesson(path) {
+    // Добавляем .html, если его нет
+    if (!path.endsWith('.html')) {
+        path += '.html';
+    }
+
+    // Открываем в текущей вкладке
+    window.location.href = path;
+}
