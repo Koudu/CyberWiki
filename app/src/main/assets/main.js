@@ -34,7 +34,7 @@ const items = [
       text: "Введение",
       lessons: [
         { id: "1.1", a: "./MarkdownHtml/lesson1.1.html", title: "Что такое кибербезопасность" },
-        { id: "1.2", a: "./MarkdownHtml/lesson1.2.html", title: "Кто такие хакеры: белые, чёрные, серые" },
+        { id: "1.2", a: "./MarkdownHtml/lesson1.2.html", title: "Кто такие хакеры" },
         { id: "1.3", a: "./MarkdownHtml/lesson1.3.html", title: "Основы: CIA и Zero Trust" },
         { id: "1.4", a: "./MarkdownHtml/lesson1.4.html", title: "Как оценивать уязвимости и атаки" }
       ]
