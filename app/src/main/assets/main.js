@@ -34,9 +34,9 @@ const items = [
       text: "Введение",
       lessons: [
         { id: "1.1", a: "./MarkdownHtml/lesson1.1.html", title: "Что такое кибербезопасность" },
-        { id: "1.2", title: "Кто такие хакеры: белые, чёрные, серые" },
-        { id: "1.3", title: "Основы: CIA и Zero Trust" },
-        { id: "1.4", title: "Как оценивать уязвимости и атаки" }
+        { id: "1.2", a: "./MarkdownHtml/lesson1.2.html", title: "Кто такие хакеры: белые, чёрные, серые" },
+        { id: "1.3", a: "./MarkdownHtml/lesson1.3.html", title: "Основы: CIA и Zero Trust" },
+        { id: "1.4", a: "./MarkdownHtml/lesson1.4.html", title: "Как оценивать уязвимости и атаки" }
       ]
     },
     {
@@ -148,7 +148,6 @@ const items = [
 ]
 
 
-// Рендеринг
 function renderPage() {
     const mainPage = document.getElementById("main-page");
     if (!mainPage) return;
@@ -158,7 +157,6 @@ function renderPage() {
     mainPage.innerHTML = html;
 }
 
-// Запуск
 document.addEventListener('DOMContentLoaded', renderPage);
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', renderPage);
@@ -169,7 +167,6 @@ if (document.readyState === 'loading') {
 document.addEventListener('DOMContentLoaded', function() {
     renderPage();
 
-    // Делегирование кликов
     document.addEventListener('click', function(e) {
         const toggle = e.target.closest('.toggle-block');
         if (!toggle) return;
@@ -178,11 +175,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const container = document.getElementById(`lessons-${sectionId}`);
         const arrow = toggle.querySelector('.arrow');
 
-        // Переключение
         container.classList.toggle('open');
         arrow.classList.toggle('open');
 
-        // Анимация: если закрыто — max-height = 0, если открыто — подстраиваем
         if (container.classList.contains('open')) {
             container.style.maxHeight = container.scrollHeight + "px";
         } else {
@@ -191,13 +186,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Функция открытия урока
 function openLesson(path) {
-    // Добавляем .html, если его нет
     if (!path.endsWith('.html')) {
         path += '.html';
     }
 
-    // Открываем в текущей вкладке
     window.location.href = path;
 }
