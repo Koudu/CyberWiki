@@ -43,106 +43,106 @@ const items = [
       id: 2,
       text: "Криптография",
       lessons: [
-        { id: "2.1", title: "Симметричное шифрование" },
-        { id: "2.2", title: "Асимметричное шифрование" },
-        { id: "2.3", title: "Как хранить пароли и проверять целостность" },
-        { id: "2.4", title: "Как работает HTTPS под капотом" },
-        { id: "2.5", title: "Шифрование будущего — защита от квантовых компьютеров" },
-        { id: "2.6", title: "Как управлять ключами в реальной жизни" }
+        { id: "2.1", a: "./MarkdownHtml/lesson2.1.html", title: "Симметричное шифрование" },
+        { id: "2.2", a: "./MarkdownHtml/lesson2.2.html", title: "Асимметричное шифрование" },
+        { id: "2.3", a: "./MarkdownHtml/lesson2.3.html", title: "Как хранить пароли и проверять целостность" },
+        { id: "2.4", a: "./MarkdownHtml/lesson2.4.html", title: "Как работает HTTPS" },
+        { id: "2.5", a: "./MarkdownHtml/lesson2.5.html", title: "Цифровые подписи" },
+        { id: "2.6", a: "./MarkdownHtml/lesson2.6.html", title: "Защита от квантовых компьютеров" }
       ]
     },
     {
       id: 3,
       text: "Сетевая безопасность",
       lessons: [
-        { id: "3.1", title: "Как устроен интернет и протоколы" },
-        { id: "3.2", title: "Фаервол" },
-        { id: "3.3", title: "Как ловить подозрительный трафик в реальном времени" },
-        { id: "3.4", title: "Как безопасно соединять офисы и удалёнщиков" },
-        { id: "3.5", title: "Как разделить сеть на зоны доверия" },
-        { id: "3.6", title: "Современные сети" }
+        { id: "3.1", a: "./MarkdownHtml/lesson3.1.html", title: "Основы Защиты Периметра" },
+        { id: "3.2", a: "./MarkdownHtml/lesson3.2.html", title: "Активное Обнаружение и Предотвращение Угроз" },
+        { id: "3.3", a: "./MarkdownHtml/lesson3.3.html", title: "Безопасное Соединение" },
+        { id: "3.4", a: "./MarkdownHtml/lesson3.4.html", title: "Сетевая Реализация Zero Trust" },
+        { id: "3.5", a: "./MarkdownHtml/lesson3.5.html", title: "Безопасность Беспроводных Сетей" }
       ]
     },
     {
       id: 4,
       text: "Безопасность операционных систем",
       lessons: [
-        { id: "4.1", title: "Как закалить Linux от взлома" },
-        { id: "4.2", title: "Как защитить Windows в корпоративной среде" },
-        { id: "4.3", title: "Как обновлять системы без простоев" },
-        { id: "4.4", title: "Безопасные контейнеры" },
-        { id: "4.5", title: "VPN: как работает туннель" },
-        { id: "4.6", title: "Фишинг" }
+        { id: "4.1", a: "./MarkdownHtml/lesson4.1.html", title: "Базовое Закаливание ОС" },
+        { id: "4.2", a: "./MarkdownHtml/lesson4.2.html", title: "Защита Windows и Linux" },
+        { id: "4.3", a: "./MarkdownHtml/lesson4.3.html", title: "Управление Обновлениями" },
+        { id: "4.4", a: "./MarkdownHtml/lesson4.4.html", title: "Безопасность Хоста и Контейнеризация" }
       ]
     },
     {
       id: 5,
       text: "Веб-безопасность",
       lessons: [
-        { id: "5.1", title: "Защита от подделки действий пользователя" },
-        { id: "5.2", title: "Как блокировать веб-атаки автоматически" },
-        { id: "5.3", title: "Безопасность API и авторизации" },
-        { id: "5.4", title: "Как оценивать уязвимости и атаки" }
+        { id: "5.1", a: "./MarkdownHtml/lesson5.1.html", title: "Уязвимости Веб-Приложений" },
+        { id: "5.2", a: "./MarkdownHtml/lesson5.2.html", title: "Безопасность API и Авторизации" },
+        { id: "5.3", a: "./MarkdownHtml/lesson5.3.html", title: "Защита Веб-Периметра" },
+        { id: "5.4", a: "./MarkdownHtml/lesson5.4.html", title: "Тестирование Приложений" }
       ]
     },
     {
       id: 6,
       text: "Active Directory и корпоративная безопасность",
       lessons: [
-        { id: "6.1", title: "Как устроена корпоративная сеть на Windows" },
-        { id: "6.2", title: "Как работает вход в домен" },
-        { id: "6.3", title: "Как хакеры крадут пароли в AD" },
-        { id: "6.4", title: "Облачный AD" },
-        { id: "6.5", title: "Как защитить домен от атак" }
+        { id: "6.1", a: "./MarkdownHtml/lesson6.1.html", title: "Архитектура AD" },
+        { id: "6.2", a: "./MarkdownHtml/lesson6.2.html", title: "Векторы Атак в AD" },
+        { id: "6.3", a: "./MarkdownHtml/lesson6.3.html", title: "Защита Домена" },
+        { id: "6.4", a: "./MarkdownHtml/lesson6.4.html", title: "Облачный и Гибридный AD" }
       ]
     },
     {
       id: 7,
       text: "Анализ вредоносного ПО",
       lessons: [
-        { id: "7.1", title: "Как разбирать вирус без запуска" },
-        { id: "7.2", title: "Как запускать малварь в песочнице" },
-        { id: "7.3", title: "Как писать правила для поиска угроз" },
-        { id: "7.4", title: "Как работают упаковщики вирусов" }
+        { id: "7.1", a: "./MarkdownHtml/lesson7.1.html", title: "Статический Анализ" },
+        { id: "7.2", a: "./MarkdownHtml/lesson7.2.html", title: "Обфускация и Упаковщики" },
+        { id: "7.3", a: "./MarkdownHtml/lesson7.3.html", title: "Динамический Анализ" },
+        { id: "7.4", a: "./MarkdownHtml/lesson7.4.html", title: "Сигнатуры и YARA-Правила" }
       ]
     },
     {
       id: 8,
       text: "SIEM и центр мониторинга",
       lessons: [
-        { id: "8.1", title: "Как собрать и анализировать логи" },
-        { id: "8.2", title: "Готовые SIEM" },
-        { id: "8.3", title: "Как автоматизировать реагирование" },
-        { id: "8.4", title: "Где брать данные об угрозах" },
-        { id: "8.5", title: "Готовые сценарии на инциденты" }
+        { id: "8.1",  a: "./MarkdownHtml/lesson8.1.html", title: "Как собрать логи со всей сети" },
+        { id: "8.2",  a: "./MarkdownHtml/lesson8.2.html", title: "Как SIEM находит угрозы" },
+        { id: "8.3",  a: "./MarkdownHtml/lesson8.3.html", title: "Где брать данные об угрозах и как их искать" },
+        { id: "8.4",  a: "./MarkdownHtml/lesson8.4.html", title: "Что делать, когда случился инцидент" },
+        { id: "8.5",  a: "./MarkdownHtml/lesson8.5.html", title: "Как блокировать угрозы автоматически" }
       ]
     },
     {
       id: 9,
       text: "Реагирование на инциденты",
       lessons: [
-        { id: "9.1", title: "Как хакеры атакуют" },
-        { id: "9.2", title: "Как расследовать взлом" },
-        { id: "9.3", title: "Что делать после инцидента" }
+        { id: "9.1", a: "./MarkdownHtml/lesson9.1.html", title: "Юридические Основы" },
+        { id: "9.2", a: "./MarkdownHtml/lesson9.2.html", title: "Сбор энергозависимых данных" },
+        { id: "9.3", a: "./MarkdownHtml/lesson9.3.html", title: "Цифровая Криминалистика" },
+        { id: "9.4", a: "./MarkdownHtml/lesson9.2.html", title: "Анализ Первопричины" },
+        { id: "9.5", a: "./MarkdownHtml/lesson9.2.html", title: "Полное Восстановление" }
       ]
     },
     {
       id: 10,
       text: "DevSecOps",
       lessons: [
-        { id: "10.1", title: "  Как проверять код на уязвимости" },
-        { id: "10.2", title: "  Как тестировать сайт в бою" },
-        { id: "10.3", title: "  Как следить за библиотеками" },
-        { id: "10.4", title: "  Безопасность инфраструктуры как кода" }
+        { id: "10.1", a: "./MarkdownHtml/lesson10.1.html", title: "  Как проверять код на ошибки до запуска" },
+        { id: "10.2", a: "./MarkdownHtml/lesson10.2.html", title: "  Как следить за безопасностью чужих библиотек" },
+        { id: "10.3", a: "./MarkdownHtml/lesson10.3.html", title: "  Как тестировать сайт/приложение во время сборки" },
+        { id: "10.4", a: "./MarkdownHtml/lesson10.4.html", title: "  Безопасность настроек облака и Docker" },
+        { id: "10.5", a: "./MarkdownHtml/lesson10.5.html", title: "  Как безопасно хранить пароли и ключи" },
       ]
     },
     {
       id: 11,
       text: "Физическая безопасность",
       lessons: [
-        { id: "11.1", title: "  Как защитить серверную комнату" },
-        { id: "11.2", title: "  Как уничтожать данные без восстановления" },
-        { id: "11.3", title: "  Защита от прослушки и излучения" }
+        { id: "11.1", a: "./MarkdownHtml/lesson11.1.html", title: "  Физическая защита периметра и здания" },
+        { id: "11.2", a: "./MarkdownHtml/lesson11.2.html", title: "  Защита критических зон: ЦОД и серверная комната" },
+        { id: "11.3", a: "./MarkdownHtml/lesson11.3.html", title: "  Защита от прослушки, излучения и ЭМП" },
+        { id: "11.4", a: "./MarkdownHtml/lesson11.4.html", title: "  Уничтожение данных и носителей" }
       ]
     }
 ]
