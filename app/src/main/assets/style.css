@@ -110,11 +110,11 @@ body {
     margin-left: 0.3125rem;
 }
 
-.textBody {
+.textBody gray purple {
     padding: 0;
 }
 
-.upTitle {
+.upTitle gray purple {
     top: 0;
     position: fixed;
     z-index: 1000;
@@ -167,7 +167,7 @@ body {
 }
 
 
-.downPanel {
+.downPanel gray purple {
     bottom: 1.25rem;
     left: 20%;
     position: fixed;
@@ -184,25 +184,25 @@ body {
     border-radius: 100rem;
 }
 
-.btnHome, .btnDictionary, .btnSettings {
+.btnHome gray purple, .btnDictionary gray purple, .btnSettings gray purple {
     width: 2rem;
     height: 2rem;
     background-size: 2rem;
     background-color: rgba(255, 255, 255, 0);
     border: none;
 }
-.btnHome:hover, .btnDictionary:hover, .btnSettings:hover {
+.btnHome gray purple:hover, .btnDictionary gray purple:hover, .btnSettings gray purple:hover {
     opacity: 1;
     transform: scale(1.1);
 }
-.btnHome {
-    background-image: url('projectPage/img/btnHome.svg');
+.btnHome gray purple {
+    background-image: url('projectPage/img/btnHome gray purple.svg');
 }
-.btnDictionary {
-    background-image: url('projectPage/img/btnDictionary.svg');
+.btnDictionary gray purple {
+    background-image: url('projectPage/img/btnDictionary gray purple.svg');
     background-size: 110%;
 }
-.btnSettings {
+.btnSettings gray purple {
     align-items: center;
-    background-image: url('projectPage/img/btnSettings.svg');
+    background-image: url('projectPage/img/btnSettings gray purple.svg');
 }
